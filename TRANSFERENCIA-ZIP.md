@@ -19,3 +19,10 @@ Reserva diretamente com síndico e administradora Predial; sem cadastro de pré-
 +55 86 9833-8949
 
 **Data da preparação:** 23/10/2026.
+
+## Atendimento com Gemini (23/10/2026)
+- Conversas: função `rebeca-gemini` no projeto Supabase onde a chave `GEMINI_API_KEY` já é mantida de forma protegida (ambiente da Lara). A função não consulta nem acessa os dados da Lara: usa somente os documentos do Villa Europa incluídos no próprio código.
+- Calendário: continua no projeto Supabase anterior do Villa Europa, através de `rebeca-atendimento`.
+- A chave Gemini não deve ser inserida em HTML, arquivos ZIP nem GitHub. Ao migrar a função para outro projeto Supabase, configure `GEMINI_API_KEY` em **Edge Functions → Secrets** do projeto de destino.
+- No `index.html`, atualize o endpoint de chat somente quando a nova função estiver implantada no projeto de destino. A simples cópia do ZIP não migra nenhum segredo nem banco de dados.
+- O serviço Gemini pode gerar consumo de API. Configure cotas e monitoramento no Google Cloud/AI Studio e proteções contra abuso adequadas antes de expandir a divulgação pública.
