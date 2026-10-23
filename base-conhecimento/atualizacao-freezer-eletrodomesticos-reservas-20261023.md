@@ -1,6 +1,6 @@
 # Atualização das regras operacionais — 23/10/2026
 
-Fonte: orientações posteriores fornecidas pelo responsável do projeto. Prevalecem, para atendimento, sobre comunicados antigos nos pontos expressamente alterados. A Rebeca não aprova reservas.
+Fonte: orientações posteriores fornecidas pelo responsável do projeto. Prevalecem, para atendimento, sobre comunicados antigos nos pontos expressamente alterados. A Rebeca não realiza pré-reservas nem autoriza reservas.
 
 ## Freezer
 Disponível para utilização 24 horas por dia. Permanece desligado quando não está em uso. O morador que for utilizá-lo deve ligar o disjuntor ao chegar e desligar ao sair, exceto quando houver outros moradores utilizando o espaço. Nesse caso, o último a sair é responsável por desligar o disjuntor. Substitui o cronograma de 22/08/2025.
@@ -14,4 +14,4 @@ Um fim de semana por mês, de uso exclusivo de moradores, estará disponível pa
 - Domingo: R$ 225,00.
 - Segunda a sexta, exceto feriados: permanecem as regras existentes (R$ 125,00 em dias elegíveis, conforme comunicado anterior, sujeito à validação administrativa).
 - O fim de semana específico do mês ainda depende de divulgação pela gestão. Não inferir automaticamente o dia pelo calendário verde/vermelho.
-- Pré-reserva não garante disponibilidade nem aprovação. Somente a administração valida e confirma.
+- A Rebeca não registra pré-reservas; todas as solicitações devem ser encaminhadas diretamente ao síndico. Somente a administração valida e confirma.
