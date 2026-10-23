@@ -26,3 +26,14 @@ Reserva diretamente com síndico e administradora Predial; sem cadastro de pré-
 - A chave Gemini não deve ser inserida em HTML, arquivos ZIP nem GitHub. Ao migrar a função para outro projeto Supabase, configure `GEMINI_API_KEY` em **Edge Functions → Secrets** do projeto de destino.
 - No `index.html`, atualize o endpoint de chat somente quando a nova função estiver implantada no projeto de destino. A simples cópia do ZIP não migra nenhum segredo nem banco de dados.
 - O serviço Gemini pode gerar consumo de API. Configure cotas e monitoramento no Google Cloud/AI Studio e proteções contra abuso adequadas antes de expandir a divulgação pública.
+
+## Conversa por voz — 23/10/2026
+- Botões na interface: **Ativar voz**, **Ouvir resposta**, **Parar** e **microfone**.
+- Ao ativar a voz, Rebeca se apresenta em português brasileiro. As próximas respostas escritas também são narradas automaticamente, enquanto a voz estiver ativada.
+- O microfone utiliza o reconhecimento de voz disponibilizado pelo navegador; requer autorização do usuário e pode não estar presente em alguns aparelhos ou navegadores.
+- A voz neural usa o serviço `rebeca-voz`, com Gemini TTS, voice Aoede, configurado no Supabase. O código está em `supabase/functions/rebeca-voz/index.ts`.
+- A chave de API permanece na variável de ambiente `GEMINI_API_KEY` do projeto Supabase conectado. **Nunca copie ou publique a chave** em GitHub, HTML, ZIP ou arquivos de configuração públicos.
+- Para publicar em outro domínio/repositório GitHub, é necessário configurar os domínios autorizados nas funções de chat e voz, atualizar os endpoints no `index.html` e cadastrar os segredos no Supabase de destino.
+- Geração de áudio por Gemini pode gerar cobrança ou consumo de cotas. Recomenda-se monitorar o uso, limitar requisições e implementar proteção por usuário/credenciais caso o sistema seja amplamente divulgado.
+- A interface continua funcional sem microfone; se a voz neural falhar, o sistema usa voz de síntese do navegador quando disponível. Essa voz alternativa pode ser menos natural.
+- A ativação do microfone depende de gesto do usuário; não há escuta contínua em segundo plano. As mensagens de texto e transcrições podem ser processadas pelos provedores de IA e reconhecimento de voz.
