@@ -3,7 +3,7 @@
 Fonte: informações oficiais de reserva fornecidas pelo usuário, incluindo flexibilização aprovada em assembleia de 25/06/2026.
 
 ## Solicitação e aprovação
-Titular da unidade preenche formulário fornecido pelo síndico. O formulário segue para a administradora Predial, que verifica a adimplência; somente após essa análise a reserva poderá ser autorizada. A Rebeca registra apenas pré-reserva pendente, nunca aprova.
+Titular da unidade preenche formulário fornecido pelo síndico. O formulário segue para a administradora Predial, que verifica a adimplência; somente após essa análise a reserva poderá ser autorizada. A Rebeca apenas orienta sobre as regras: não registra pré-reservas, não recebe pedidos e não autoriza reservas.
 
 ## Áreas
 O condomínio possui cinco espaços: Playground; Churrasqueira 1 (ao lado do playground); Churrasqueira 2 (ao lado da piscina); Piscina; Campo. Somente as churrasqueiras 1 e 2 são reserváveis. Piscina e os demais espaços não integram a reserva.
@@ -14,9 +14,9 @@ O condomínio possui cinco espaços: Playground; Churrasqueira 1 (ao lado do pla
 - Fins de semana fora dessa flexibilização não estão disponíveis para reserva conforme o comunicado.
 
 ## Limites e horários
-- Até 40 convidados por evento reservado.
+- Áreas comuns de uso cotidiano: até 4 convidados por unidade, conforme o regimento. Na piscina: até 4 convidados por vez, em revezamento.\n- Somente eventos com reserva autorizada das Churrasqueiras 1 e 2: até 40 convidados por evento.
 - Uso de 12h a 02h: até 22h som em volume normal; de 22h a 00h apenas som ambiente; de 00h a 02h sem som, apenas conversas moderadas.
 - Piscina permanece de uso comum: até 4 convidados por vez, em sistema de revezamento. Não é parte da reserva.
 
 ## Observações
-O protocolo eletrônico da Rebeca não substitui o formulário do síndico nem a autorização da Predial. Havendo dúvida sobre qual fim de semana está liberado ou disponibilidade das churrasqueiras, encaminhar à gestão.
+A Rebeca não disponibiliza protocolo eletrônico de reserva. Somente o formulário do síndico e a análise da administradora Predial compõem o procedimento. Havendo dúvida sobre qual fim de semana está liberado ou disponibilidade das churrasqueiras, encaminhar à gestão.
