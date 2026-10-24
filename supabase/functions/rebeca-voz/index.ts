@@ -10,6 +10,7 @@ Deno.serve(async(req:Request)=>{
  if(req.method!=="POST")return json({error:"Método não permitido"},405);
  const origin=req.headers.get("origin")||"";
  if(origin&&origin!==allowedOrigin)return json({error:"Origem não permitida"},403);
+ if(Date.now()<providerQuotaUntil)return json({code:"tts_daily_quota",error:"A cota diária da voz natural terminou. O chat continua funcionando por texto.",retryAfterSeconds:Math.ceil((providerQuotaUntil-Date.now())/1000)},429);
  const ip=req.headers.get("cf-connecting-ip")||req.headers.get("x-forwarded-for")?.split(",")[0]||"unknown";
  const now=Date.now();let v=visits.get(ip);if(!v||now>v.reset)v={reset:now+15*60*1000,count:0};if(++v.count>10)return json({code:"local_rate_limit",error:"Muitas solicitações de áudio em poucos minutos. Tente novamente mais tarde."},429);visits.set(ip,v);if(visits.size>1800)visits.clear();
  let body:any;try{body=await req.json()}catch{return json({error:"Dados inválidos"},400)}
@@ -18,7 +19,6 @@ Deno.serve(async(req:Request)=>{
  const key=Deno.env.get("GEMINI_API_KEY")||Deno.env.get("GOOGLE_API_KEY");
  if(!key)return json({error:"Síntese neural de voz não configurada"},503);
  const model=Deno.env.get("REBECA_TTS_MODEL")||"gemini-3.8-flash-lite-tts";
- if(Date.now()<providerQuotaUntil)return json({code:"tts_daily_quota",error:"A cota diária da voz natural terminou. O chat continua funcionando por texto.",retryAfterSeconds:Math.ceil((providerQuotaUntil-Date.now())/1000)},429);
  const payload={model,input:[{type:"user_input",content:[{type:"text",text,annotations:[{type:"speech_metadata",style:"Voz feminina natural, calorosa e acolhedora, em português brasileiro. Falar como uma atendente humana educada, com dicção clara, pausas naturais, ritmo moderado e tom conversacional, sem narração publicitária."}]}]}],response_format:{type:"audio",mime_type:"audio/wav"},generation_config:{speech_config:[{voice:"Aoede"}]}};
  const ctl=new AbortController();const timeout=setTimeout(()=>ctl.abort(),22000);
  try{const r=await fetch("https://generativelanguage.googleapis.com/v1beta/interactions",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload),signal:ctl.signal});
