@@ -767,7 +767,8 @@ async function speakNeural(value){
       if(!response.ok){
         const details=await response.json().catch(()=>({}));
         const error=new Error('Não foi possível produzir a narração.');
-        error.rateLimited=response.status===429||details.status===429;
+        error.rateLimited=details.code==='tts_daily_quota'||(response.status===429&&!details.code);
+        error.localRateLimited=details.code==='local_rate_limit';
         error.retryAfterSeconds=Number(details.retryAfterSeconds)||0;
         throw error;
       }
@@ -789,11 +790,12 @@ async function speakNeural(value){
       setVoiceStatus('Áudio preparado. Toque em Ouvir resposta para autorizar a reprodução.');
       return;
     }
-    voiceTemporarilyUnavailable=Boolean(err?.rateLimited);
+    voiceTemporarilyUnavailable=Boolean(err?.rateLimited||err?.localRateLimited);
     voiceRetryAfterSeconds=Number(err?.retryAfterSeconds)||0;
     // Manter a preferência do morador; nunca alternar silenciosamente a voz neural para a voz do aparelho.
     setVoiceStatus(err?.rateLimited?
       'Limite diário gratuito da voz natural atingido. A Rebeca continua respondendo por texto. '+(voiceRetryAfterSeconds?'Previsão de nova tentativa: aproximadamente '+Math.ceil(voiceRetryAfterSeconds/3600)+' hora(s).':'Tente mais tarde.'):
+      err?.localRateLimited?'Muitas solicitações de voz em pouco tempo. Aguarde alguns minutos; a resposta está disponível em texto.':
       'A voz natural não pôde ser reproduzida agora. A resposta está no chat; toque em Ouvir resposta para tentar novamente.');
   }finally{
     voiceAbort=null;
