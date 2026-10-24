@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'android-app/**'
+      - 'assets/icone-rebeca-android.png'
       - '.github/workflows/android-apk.yml'
   workflow_dispatch:
 
