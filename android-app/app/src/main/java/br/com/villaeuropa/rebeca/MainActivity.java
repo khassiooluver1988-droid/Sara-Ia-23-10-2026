@@ -139,7 +139,7 @@ public class MainActivity extends Activity {
                 String phrase = phrases.get(0);
                 js("(function(){var field=document.getElementById('msg');var send=document.getElementById('send');"
                     + "if(field&&send){field.value=" + org.json.JSONObject.quote(phrase)
-                    + ";field.dispatchEvent(new Event('input',{bubbles:true}));send.click();}})()");
+                    + ";field.dispatchEvent(new Event('input',{bubbles:true}));var voice=document.getElementById('voiceToggle');if(voice&&voice.getAttribute('aria-pressed')!=='true')voice.click();send.click();}})()");
                 showVoiceStatus("Pergunta transcrita e enviada à Rebeca.");
             }
             @Override public void onPartialResults(Bundle results) {}
