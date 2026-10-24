@@ -30,7 +30,7 @@ Uso do pátio para lazer e confraternizações. Exige zelo, responsabilidade e a
 ## Solicitação de reserva
 **Arts. 19º e 24º a 29º**
 
-Solicitação ao síndico por formulário, com antecedência mínima de sete dias, termo de responsabilidade e adimplência. Apresentar lista de convidados à portaria duas horas antes do evento. A minuta prevê uma reserva por dia e consequências para cancelamento em prazo inferior a 48 horas. A Rebeca só registra pré-reserva; a administração autoriza.
+Solicitação ao síndico por formulário, com antecedência mínima de sete dias, termo de responsabilidade e adimplência. Apresentar lista de convidados à portaria duas horas antes do evento. A minuta prevê uma reserva por dia e consequências para cancelamento em prazo inferior a 48 horas. A Rebeca apenas explica as regras e o procedimento de reserva da área de lazer; não recebe pedidos, não registra pré-reservas, não consulta nem confirma disponibilidade e não aprova reservas. Os pedidos são tratados diretamente com o síndico e a administradora Predial.
 
 ## Piscina — regras no regimento
 **Arts. 4º e 30º a 33º**
