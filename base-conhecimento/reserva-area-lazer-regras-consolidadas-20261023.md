@@ -6,7 +6,7 @@ Fonte: informações oficiais de reserva fornecidas pelo usuário, incluindo fle
 Titular da unidade preenche formulário fornecido pelo síndico. O formulário segue para a administradora Predial, que verifica a adimplência; somente após essa análise a reserva poderá ser autorizada. A Rebeca apenas orienta sobre as regras: não registra pré-reservas, não recebe pedidos e não autoriza reservas.
 
 ## Áreas
-O condomínio possui cinco espaços: Playground; Churrasqueira 1 (ao lado do playground); Churrasqueira 2 (ao lado da piscina); Piscina; Campo. Somente as churrasqueiras 1 e 2 são reserváveis. Piscina e os demais espaços não integram a reserva.
+A área de lazer do Residencial Villa Europa reúne playground, Churrasqueira 1 (ao lado do playground), Churrasqueira 2 (ao lado da piscina), piscina e campo. A churrasqueira e a piscina fazem parte da mesma área de lazer, não constituindo serviços independentes na navegação da Rebeca. Pelas regras de reserva atualmente cadastradas, somente as churrasqueiras 1 e 2 podem ser reservadas. A piscina, embora integre a área de lazer, permanece de uso comum e não está incluída na reserva exclusiva da churrasqueira.
 
 ## Dias e valores
 - Segunda a sexta: R$ 125,00 por reserva, exceto feriados, vésperas de Natal e Ano Novo e dias de assembleia.
