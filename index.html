@@ -391,6 +391,276 @@ footer{
 .rebeca-footer span{max-width:840px}
 .rebeca-footer small{color:#536f82;font-size:11px;max-width:860px;line-height:1.5}
 @media(max-width:680px){.rebeca-footer{padding:13px 12px;gap:6px;font-size:11px}.rebeca-footer>strong{font-size:12px}.rebeca-footer small{font-size:10.5px}}
+
+/* REBECA-VILLA-EUROPA-DARK-LAYOUT-20261024-009: layout aprovado azul-marinho, cor dos controles e logomarca */
+:root{
+ --rv-navy:#041f3b;
+ --rv-navy-2:#06345d;
+ --rv-navy-3:#0b4776;
+ --rv-orange:#ff741d;
+ --rv-blue-soft:#d5efff;
+ --rv-blue-edge:#75c6f6;
+ --rv-green:#15935f;
+ --rv-green-dark:#0d754c;
+ --rv-white:#ffffff;
+}
+html{background:#041d37}
+body{
+ color:#ffffff;
+ background:linear-gradient(135deg,#041b33,#092f54 45%,#062947)!important;
+}
+.app{
+ position:relative;
+ min-height:100dvh;
+ background:linear-gradient(155deg,#082e53 0%,#041c36 70%,#062d50 100%)!important;
+ border:0!important;
+ box-shadow:0 15px 40px rgba(1,18,36,.32);
+}
+header{
+ isolation:isolate;
+ min-height:155px!important;
+ display:flex;
+ flex-direction:row;
+ align-items:center;
+ padding:23px clamp(14px,2.5vw,24px) 32px!important;
+ background:linear-gradient(135deg,#042348,#0a477c 53%,#042848 100%)!important;
+ border-bottom:0!important;
+ box-shadow:none!important;
+ overflow:visible;
+}
+header::after{
+ content:"";
+ position:absolute;
+ inset:0;
+ z-index:0;
+ pointer-events:none;
+ background:linear-gradient(150deg,transparent 48%,rgba(23,121,186,.14) 49%,rgba(23,121,186,.14) 66%,transparent 66%);
+}
+header::before{
+ content:"";
+ position:absolute;
+ left:0;right:0;bottom:-1px;top:auto;
+ width:100%;height:17px;
+ pointer-events:none;
+ z-index:1;
+ background:linear-gradient(90deg,#ff7b1b 0%,#fb6712 60%,#ff8e34 100%);
+ clip-path:polygon(0 35%,17% 63%,42% 70%,63% 55%,82% 20%,100% 38%,100% 100%,0 100%);
+}
+header .brand-logo{
+ position:relative;
+ z-index:2;
+ flex:0 1 auto!important;
+ width:clamp(160px,39vw,280px)!important;
+ max-width:290px!important;
+ min-width:128px!important;
+ height:auto!important;
+ aspect-ratio:720 / 311;
+ background-image:url('assets/villa-europa-logo-fundo-escuro.svg?v=20261024-009')!important;
+ background-color:transparent!important;
+ background-position:center!important;
+ background-repeat:no-repeat!important;
+ background-size:contain!important;
+ filter:none!important;
+}
+header .identity{
+ position:relative;
+ z-index:2;
+ margin-left:auto;
+ gap:10px;
+}
+header .portrait{
+ width:78px!important;
+ height:78px!important;
+ border:3px solid var(--rv-orange)!important;
+ box-shadow:0 0 0 3px rgba(255,255,255,.96),0 7px 18px rgba(1,16,33,.3)!important;
+}
+header .menu-rebeca{
+ width:50px;
+ height:43px;
+ border-radius:13px;
+ border:1px solid #4c9cd1;
+ background:linear-gradient(135deg,#0e5486,#043963)!important;
+ box-shadow:0 4px 12px rgba(0,10,30,.26);
+}
+header .menu-rebeca span{background:#fff!important}
+header .menu-rebeca[aria-expanded="true"]{
+ border-color:var(--rv-orange);
+ background:linear-gradient(140deg,#e96718,#f98936)!important;
+}
+header .nav{
+ z-index:55;
+ border:1px solid #d5e6f0;
+ border-top:4px solid var(--rv-orange);
+ box-shadow:0 16px 28px rgba(0,12,29,.38);
+}
+#chat{
+ flex:1;
+ min-height:0!important;
+ max-height:none!important;
+ background:
+   linear-gradient(148deg,rgba(13,85,143,.22) 0%,transparent 42%),
+   radial-gradient(circle at 80% 84%,rgba(12,82,133,.35),transparent 58%),
+   linear-gradient(160deg,#052848 0%,#04203d 62%,#092e51 100%)!important;
+ color:#fff;
+ padding:24px clamp(12px,3vw,26px) 30px;
+}
+.bubble:not(.mine){
+ color:#123b61;
+ background:linear-gradient(135deg,#ffffff,#fefeff)!important;
+ border:1px solid #e5ecf4;
+ border-top:4px solid var(--rv-orange)!important;
+ border-radius:23px 23px 23px 10px;
+ box-shadow:0 9px 24px rgba(0,13,32,.17);
+ padding:20px clamp(15px,2vw,21px);
+ font-size:16px;
+ line-height:1.63;
+}
+.bubble:not(.mine):before{
+ border:3px solid #fff;
+ box-shadow:0 0 0 2px var(--rv-orange),0 6px 14px rgba(0,13,32,.18);
+}
+.bubble.mine{
+ color:#fff;
+ background:linear-gradient(140deg,#0b5786,#0a3965)!important;
+ border:1px solid #257aab;
+ border-radius:21px 21px 9px 21px;
+ box-shadow:0 5px 15px rgba(0,13,32,.21);
+}
+.voice-tools{
+ display:flex!important;
+ flex-wrap:wrap;
+ align-items:stretch;
+ gap:9px;
+ background:linear-gradient(160deg,#082d52,#062542)!important;
+ color:#fff;
+ border:0;
+ border-top:1px solid rgba(128,202,249,.34);
+ padding:13px clamp(11px,2vw,21px) 10px;
+}
+.voice-tools #voiceToggle,
+.voice-tools #voiceReplay,
+.voice-tools #voiceStop{
+ color:#073a5f!important;
+ background:linear-gradient(180deg,#ecf8ff,#c8e9fd)!important;
+ border:1.5px solid var(--rv-blue-edge)!important;
+ box-shadow:0 3px 9px rgba(0,14,34,.17)!important;
+ border-radius:13px;
+ font-size:14px;
+ font-weight:750;
+ min-height:45px;
+ transition:background .2s ease,filter .2s ease;
+}
+.voice-tools #voiceToggle{
+ flex:1 0 100%!important;
+ min-width:0!important;
+ text-align:center;
+}
+.voice-tools #voiceReplay,
+.voice-tools #voiceStop{flex:1 1 calc(50% - 5px)}
+.voice-tools #voiceToggle[aria-pressed="true"]{
+ color:#073a5f!important;
+ background:linear-gradient(180deg,#b9e7ff,#8ad3fa)!important;
+ border-color:#42adeb!important;
+}
+.voice-tools #voiceToggle:hover,
+.voice-tools #voiceReplay:hover,
+.voice-tools #voiceStop:hover{
+ background:#b7e4ff!important;
+ filter:brightness(1.04);
+}
+.voice-tools .voice-status{
+ color:#e3f2ff!important;
+ font-size:12px;
+ line-height:1.5;
+ flex:1 0 100%;
+}
+.compose{
+ background:linear-gradient(160deg,#062542,#052039)!important;
+ border:0!important;
+ padding:10px clamp(11px,2vw,21px) 18px;
+ gap:9px;
+}
+.compose textarea{
+ min-height:105px;
+ background:#fff!important;
+ color:#103555!important;
+ border:2px solid #accfdf!important;
+ border-radius:18px!important;
+ padding:15px;
+ font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+ box-shadow:0 3px 10px rgba(0,18,33,.16);
+}
+.compose textarea:focus{
+ border-color:#80cef7!important;
+ box-shadow:0 0 0 3px rgba(128,206,247,.18);
+}
+.compose textarea::placeholder{color:#8095a6}
+.compose #mic,
+.compose #mic[aria-pressed="false"]{
+ color:#fff!important;
+ background:linear-gradient(160deg,var(--rv-green),var(--rv-green-dark))!important;
+ border:1.5px solid #40b78b!important;
+ box-shadow:0 4px 12px rgba(0,17,25,.26)!important;
+ border-radius:17px;
+ min-width:0;
+}
+.compose #mic[aria-pressed="true"]{
+ background:linear-gradient(160deg,#27ac72,#097048)!important;
+ border-color:#83f0b6!important;
+ box-shadow:0 0 0 3px rgba(83,205,150,.25)!important;
+}
+.compose #mic:hover{filter:brightness(1.07)}
+.compose #mic small{color:#fff!important;font-weight:750}
+.compose .send{
+ color:#fff!important;
+ background:linear-gradient(140deg,#18a368,#097349)!important;
+ border:1.5px solid #4ab88c!important;
+ border-radius:17px;
+ box-shadow:0 4px 12px rgba(0,17,25,.24)!important;
+}
+.compose .send:hover{background:#13af70!important}
+.rebeca-footer{
+ background:linear-gradient(135deg,#03192e,#052742)!important;
+ color:#d7e9f8!important;
+ border-top:1px solid rgba(116,189,233,.25)!important;
+}
+.rebeca-footer>strong{color:#fff!important}
+.rebeca-footer small{color:#b8d2e6!important}
+@media(max-width:680px){
+ header{
+  min-height:161px!important;
+  padding:18px 12px 26px!important;
+  gap:9px;
+ }
+ header .brand-logo{
+  width:clamp(171px,47vw,230px)!important;
+  min-width:150px!important;
+  max-width:230px!important;
+ }
+ header .portrait{width:70px!important;height:70px!important}
+ header .menu-rebeca{width:46px;height:41px}
+ #chat{padding:22px 12px 23px!important}
+ .bubble:not(.mine){padding:16px 14px;font-size:15px;line-height:1.55}
+ .voice-tools{gap:8px;padding:12px 11px 9px}
+ .voice-tools #voiceToggle,
+ .voice-tools #voiceReplay,
+ .voice-tools #voiceStop{font-size:13px;min-height:44px}
+ .voice-tools #voiceToggle{font-size:14px}
+ .voice-tools .voice-status{font-size:12px}
+ .compose{padding:9px 10px 13px;gap:7px}
+ .compose textarea{min-height:105px;padding:12px;font-size:16px}
+ .compose #mic{flex:0 0 58px!important}
+ .compose .send{min-width:50px!important;flex:0 0 50px!important}
+}
+@media(max-width:370px){
+ header .brand-logo{width:150px!important;min-width:140px!important}
+ header .portrait{width:60px!important;height:60px!important}
+ .compose #mic{flex:0 0 52px!important}
+ .compose .send{min-width:43px!important;flex:0 0 43px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .voice-tools button,.compose button{transition:none!important}
+}
 </style></head><body><div class="app"><header><div class="brand brand-logo" role="img" aria-label="Residencial Villa Europa"></div><div class="identity"><span class="portrait" role="img" aria-label="Rebeca, personagem 3D do Residencial Villa Europa"></span><div><strong>Rebeca</strong><small>Assistente Virtual<br>Residencial Villa Europa</small></div></div><span class="online">● Online</span></header><main id="chat" class="panel active" role="log" aria-label="Conversa com Rebeca" aria-live="polite"></main><section id="calendarView" class="panel"><button type="button" class="back-chat">← Voltar à conversa</button><h2>Calendário da área de lazer</h2><p>Verde: somente moradores. Vermelho: moradores e visitantes convidados.</p><button id="prev">‹</button> <b id="month"></b> <button id="next">›</button><div class="calendar" id="days"></div><p id="dayInfo">Escolha uma data. Cor e disponibilidade são informações diferentes.</p></section><section id="reserveView" class="panel"><button type="button" class="back-chat">← Voltar à conversa</button><h2>Como solicitar a reserva da área de lazer</h2><p><strong>A reserva deve ser solicitada diretamente à administração.</strong> A Rebeca apenas orienta sobre o procedimento, sem cadastrar, enviar, realizar ou confirmar solicitações.</p><h3>Procedimento</h3><p>O titular da unidade solicita ao síndico o formulário próprio e o devolve preenchido. A administradora Predial verifica a adimplência e analisa a autorização. Para saber a disponibilidade das datas e da churrasqueira desejada, consulte diretamente a administração.</p><h3>Áreas reserváveis</h3><p>Somente a <strong>Churrasqueira 1</strong> (ao lado do playground) e a <strong>Churrasqueira 2</strong> (ao lado da piscina) podem ser reservadas. A piscina, o campo e o playground permanecem como áreas de uso comum.</p><h3>Valores e dias</h3><p><strong>Segunda a sexta: R$ 125,00</strong>, exceto feriados, vésperas de Natal ou Ano Novo e dias de assembleias. Em <strong>um fim de semana por mês</strong>, exclusivo de moradores, é permitida reserva no sábado ou domingo por <strong>R$ 225,00</strong>. O síndico informará qual fim de semana está disponível.</p><h3>Horários e convidados</h3><p><strong>Áreas comuns: até 4 convidados por unidade.</strong> O limite de <strong>40 convidados</strong> aplica-se somente a eventos com reserva de churrasqueira autorizada. Uso das <strong>12h às 02h</strong>: até 22h som normal; 22h–00h apenas som ambiente; 00h–02h sem som, com conversas moderadas. Nas áreas comuns, o limite é de 4 convidados por unidade, conforme o regimento. Na piscina, o comunicado prevê até 4 convidados por vez, em sistema de revezamento. A piscina não está incluída na reserva.</p><p class="muted">Informações fornecidas pela gestão. Reservas e autorizações devem ser tratadas diretamente com o síndico e com a administradora Predial.</p></section><section id="freezerView" class="panel"><button type="button" class="back-chat">← Voltar à conversa</button><h2>Freezer — disponível 24 horas por dia</h2><p>O freezer permanece desligado quando não está em uso. Ao chegar, o morador deverá ligar o disjuntor. Ao sair, deverá desligá-lo. Se outros moradores continuarem utilizando o espaço, o freezer poderá permanecer ligado, sendo o último morador responsável por desligá-lo.</p></section><section id="rulesView" class="panel"><button type="button" class="back-chat">← Voltar à conversa</button><h2>Regras do Condomínio</h2><p class="muted">Fonte: minuta de Regimento Interno Villa Europa (11 páginas). A administração deve confirmar a versão vigente e esclarecer divergências.</p><section class="convivencia"><h3>Regras de Convivência e Comunicação</h3><p class="muted">Comunicado da Gestão do Condomínio Villa Europa — regras para o grupo de moradores.</p><details class="rule-item"><summary>Respeito e linguagem cordial</summary><p>Opiniões divergentes devem ser expressas com educação e equilíbrio. Não são tolerados xingamentos, agressões verbais, deboche, sarcasmo ofensivo ou provocações.</p></details><details class="rule-item"><summary>Combate ao preconceito e exposição</summary><p>São proibidos racismo, homofobia, machismo, xenofobia, intolerância religiosa, humilhações públicas, exposição de moradores e indiretas ofensivas.</p></details><details class="rule-item"><summary>Assuntos permitidos no grupo</summary><p>O grupo é destinado somente a assuntos diretamente relacionados ao condomínio. Não envie memes, correntes, brincadeiras, sátiras, fotos ou vídeos sem relação com o residencial.</p></details><details class="rule-item"><summary>Discussões e moderação</summary><p>Evite bate-boca e disputas pessoais. Conforme comunicado da gestão, o descumprimento dessas regras resulta na remoção imediata do grupo. Isso não equivale automaticamente a uma multa condominial.</p></details><p><a href="base-conhecimento/regras-convivencia-comunicacao.md" target="_blank" rel="noopener">Ler comunicado organizado de convivência e comunicação</a></p></section><h3>Atualizações operacionais da gestão</h3><details class="rule-item"><summary>Freezer — 24 horas</summary><p>Disponível 24 horas. O morador liga o disjuntor ao chegar e desliga ao sair. Se outros estiverem utilizando, o último morador a sair deve desligá-lo.</p></details><details class="rule-item"><summary>Eletrodomésticos — liberação condicionada</summary><p>O uso em fins de semana e feriados foi aprovado, mas só será liberado após a instalação das placas solares e a comunicação da gestão. Até lá, permanece proibido.</p></details><details class="rule-item"><summary>Reserva de Área de Lazer — fim de semana</summary><p>Um fim de semana por mês, exclusivo aos moradores, poderá receber reserva no sábado ou domingo. Taxa de R$ 225,00 por dia de reserva. Solicitação e formulário pelo síndico. Para segunda a sexta (exceto feriados), permanecem as regras anteriores.</p></details><h3>Regimento Interno — regras gerais</h3><div id="rulesTopics"></div><p><a href="base-conhecimento/regimento-interno-organizado.md" target="_blank" rel="noopener">Consultar índice organizado e referências dos artigos</a></p></section><section id="adminView" class="panel"><button type="button" class="back-chat">← Voltar à conversa</button><h2>Falar com a administração</h2><p>Para reservas da área de lazer, confirmação de disponibilidade, reclamações e outras solicitações, entre em contato diretamente com a administração do Residencial Villa Europa.</p><p><strong>Contato: +55 86 9833-8949</strong></p><p><a href="https://wa.me/558698338949" target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp</a> · <a href="tel:+558698338949">Ligar para a administração</a></p></section><div class="voice-tools" role="group" aria-label="Controles de áudio da Rebeca"><button type="button" id="voiceToggle" aria-pressed="false" title="Ativar ou desativar a voz da Rebeca">🔊 Ativar voz da Rebeca</button><button type="button" id="voiceReplay" title="Ouvir novamente a última resposta">▶ Ouvir resposta</button><button type="button" id="voiceStop" title="Parar a leitura da resposta">■ Parar</button><span class="voice-status" id="voiceStatus" role="status" aria-live="polite">Para perguntar por voz, toque em Falar. Sua fala será transcrita para o chat.</span></div><div class="compose"><textarea id="msg" rows="3" placeholder="Digite sua mensagem aqui..." aria-label="Mensagem para a Rebeca" enterkeyhint="send"></textarea><button type="button" id="mic" aria-label="Falar pelo microfone e enviar pergunta por voz" title="Toque para falar; sua pergunta será transcrita e enviada como texto"><span aria-hidden="true">🎙️</span><small>Falar</small></button><button type="button" class="send" id="send" aria-label="Enviar mensagem" title="Enviar mensagem">➤</button></div><audio id="rebecaAudio" preload="none"></audio><nav class="nav" aria-label="Ajuda rápida"><button data-view="calendarView"><span class="ico">▦</span>Calendário<br>de Lazer</button><button data-view="reserveView"><span class="ico">▦</span>Reserva da<br>Área de Lazer</button><button data-view="freezerView"><span class="ico">▣</span>Freezer<br>(Cronograma)</button><button data-view="rulesView"><span class="ico">▤</span>Regras do<br>Condomínio</button><button data-view="adminView"><span class="ico">☎</span>Falar com a<br>Administração</button></nav><footer class="rebeca-footer" role="contentinfo"><strong>Rebeca — Inteligência Artificial do Residencial Villa Europa.</strong><span>Seu sistema foi desenvolvido e programado por <strong>Khassio Silva</strong>, com foco em boas práticas técnicas, segurança da informação, privacidade e proteção de dados pessoais, visando observar os princípios da Lei Geral de Proteção de Dados (LGPD).</span><small>As mensagens e os recursos de voz podem utilizar serviços tecnológicos externos e recursos do navegador. Evite compartilhar dados pessoais sensíveis. A Rebeca presta orientações; a aprovação de reservas cabe à administração.</small></footer></div><script>const $=id=>document.getElementById(id);let nome='',bloco='',now=new Date(),m=now.getMonth(),y=now.getFullYear();const verified={"2026-01-03":"vermelho","2026-01-04":"vermelho","2026-01-10":"verde","2026-01-11":"verde","2026-01-17":"vermelho","2026-01-18":"vermelho","2026-01-24":"verde","2026-01-25":"verde","2026-01-31":"vermelho","2026-02-01":"vermelho","2026-02-07":"verde","2026-02-08":"verde","2026-02-14":"vermelho","2026-02-15":"vermelho","2026-02-21":"verde","2026-02-22":"verde","2026-02-28":"vermelho","2026-03-01":"vermelho","2026-03-07":"verde","2026-03-08":"verde","2026-03-14":"vermelho","2026-03-15":"vermelho","2026-03-21":"verde","2026-03-22":"verde","2026-03-28":"vermelho","2026-03-29":"vermelho","2026-04-04":"verde","2026-04-05":"verde","2026-04-11":"vermelho","2026-04-12":"vermelho","2026-04-18":"verde","2026-04-19":"verde","2026-04-25":"vermelho","2026-04-26":"vermelho","2026-05-02":"verde","2026-05-03":"verde","2026-05-09":"vermelho","2026-05-10":"vermelho","2026-05-16":"verde","2026-05-17":"verde","2026-05-23":"vermelho","2026-05-24":"vermelho","2026-05-30":"verde","2026-05-31":"verde","2026-06-06":"vermelho","2026-06-07":"vermelho","2026-06-13":"verde","2026-06-14":"verde","2026-06-20":"vermelho","2026-06-21":"vermelho","2026-06-27":"verde","2026-06-28":"verde","2026-07-04":"vermelho","2026-07-05":"vermelho","2026-07-11":"verde","2026-07-12":"verde","2026-07-18":"vermelho","2026-07-19":"vermelho","2026-07-25":"verde","2026-07-26":"verde","2026-08-01":"vermelho","2026-08-02":"vermelho","2026-08-08":"verde","2026-08-09":"verde","2026-08-15":"vermelho","2026-08-16":"vermelho","2026-08-22":"verde","2026-08-23":"verde","2026-08-29":"vermelho","2026-08-30":"vermelho","2026-09-05":"verde","2026-09-06":"verde","2026-09-12":"vermelho","2026-09-13":"vermelho","2026-09-19":"verde","2026-09-20":"verde","2026-09-26":"vermelho","2026-09-27":"vermelho","2026-10-03":"verde","2026-10-04":"verde","2026-10-10":"vermelho","2026-10-11":"vermelho","2026-10-17":"verde","2026-10-18":"verde","2026-10-24":"vermelho","2026-10-25":"vermelho","2026-10-31":"verde","2026-11-01":"verde","2026-11-07":"vermelho","2026-11-08":"vermelho","2026-11-14":"verde","2026-11-15":"verde","2026-11-21":"vermelho","2026-11-22":"vermelho","2026-11-28":"verde","2026-11-29":"verde","2026-12-05":"vermelho","2026-12-06":"vermelho","2026-12-12":"verde","2026-12-13":"verde","2026-12-19":"vermelho","2026-12-20":"vermelho","2026-12-26":"verde","2026-12-27":"verde"};function bubble(s,me=false){const d=document.createElement('div');d.className='bubble'+(me?' mine':'');d.textContent=s;$('chat').append(d);$('chat').scrollTop=$('chat').scrollHeight}bubble('Olá! Sou a Rebeca, assistente virtual do Residencial Villa Europa. Posso esclarecer suas dúvidas com base no regimento interno e nos comunicados da administração. Sobre qual assunto você gostaria de saber?');function reply(q){if(!nome){let n=q.match(/(?:meu nome é|me chamo|sou)\s+([\p{L} ]+?)(?:\s+e\s+|,|\.|$)/iu),b=q.match(/bloco\s*(?:é|:)?\s*([\p{L}\d-]+)/iu);if(n&&b){nome=n[1].trim();bloco=b[1].toUpperCase();return 'Obrigado, '+nome+'! Bloco '+bloco+'. Como posso ajudar?'}return 'Informe apenas nome e bloco. Exemplo: Meu nome é Ana e meu bloco é B.'}const t=q.toLowerCase();if(/freezer/.test(t))return 'Segunda e terça: desligado. Quarta: 12h às 22h. Quinta a domingo: 8h às 22h. Fonte: comunicado de 22/08/2025.';if(/visitant|convidad|calend|verde|vermelh|dia \d/.test(t)){const months={'janeiro':1,'fevereiro':2,'março':3,'marco':3,'abril':4,'maio':5,'junho':6,'julho':7,'agosto':8,'setembro':9,'outubro':10,'novembro':11,'dezembro':12};let match=t.match(/(?:dia\s*)?(\d{1,2})\s*(?:de\s*)?(janeiro|fevereiro|março|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)/),num=t.match(/\b(\d{1,2})\/(\d{1,2})(?:\/(\d{4}))?/);let d,mo,yr=2026;if(match){d=+match[1];mo=months[match[2]]}else if(num){d=+num[1];mo=+num[2];yr=+(num[3]||2026)}if(d&&mo){const key=yr+'-'+String(mo).padStart(2,'0')+'-'+String(d).padStart(2,'0');const cor=verified[key];return cor==='verde'?'No dia '+d+'/'+mo+'/'+yr+', o calendário está VERDE: uso exclusivo dos moradores. A cor não confirma disponibilidade de reserva.':cor==='vermelho'?'No dia '+d+'/'+mo+'/'+yr+', o calendário está VERMELHO: uso aberto para moradores e visitantes. A cor não confirma disponibilidade de reserva.':'Não há classificação oficial confirmada para essa data no calendário de 2026. Consulte a administração.'}return 'Verde: uso exclusivo dos moradores. Vermelho: uso aberto para moradores e visitantes. Abra Calendário para escolher a data. A cor não confirma disponibilidade de reserva.';}if(/churras|reserv|dispon/.test(t))return 'Posso explicar como solicitar a reserva da área de lazer. O titular deve pedir o formulário ao síndico, e a administradora Predial analisará o pedido. Não faço reservas.';return 'Não encontrei uma resposta oficial confirmada para essa pergunta. Consulte a administração.'}
 const voiceEndpoint="https://dlynbiplzruxdhgwinyn.supabase.co/functions/v1/rebeca-voz";
 const player=$('rebecaAudio');let voiceOn=false;let voiceAbort=null;let voiceObjectUrl=null;let lastReply="";let listening=false;let listeningRecognition=null;let currentVoiceRequest=0;
